@@ -27,6 +27,7 @@ namespace KursyPlayer
         string filmPaths = String.Empty;
         Dictionary<string, string> courses = new Dictionary<string, string>();
         Dictionary<string, string> lessons = new Dictionary<string, string>();
+        bool progressChanging = false;
         #endregion
 
 
@@ -146,8 +147,9 @@ namespace KursyPlayer
                     if (TotalTime.TotalSeconds > 0)
                     {
                         // Updating time slider
-                        sldProgress.Value = mediaElement.Position.TotalSeconds / TotalTime.TotalSeconds;
-                        lblTime.Content = $"{TotalTime.ToString(@"mm\:ss")} / {mediaElement.Position.ToString(@"mm\:ss")}";
+                        if(!sldProgress.IsMouseOver)
+                            sldProgress.Value = mediaElement.Position.TotalSeconds / TotalTime.TotalSeconds;
+                        lblTime.Content = $"{mediaElement.Position.ToString(@"hh\:mm\:ss")} / {TotalTime.ToString(@"hh\:mm\:ss")}";
                     }
                 }
             }

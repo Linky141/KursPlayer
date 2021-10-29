@@ -34,7 +34,7 @@
                     <Button Content="+10" x:Name="btnPlus10" HorizontalAlignment="Left" Margin="274,52,0,0" VerticalAlignment="Top" Click="btnPlus10_Click" Height="20" Width="38"/>
                     <Button Content="Stop" x:Name="btnStop" HorizontalAlignment="Left" Margin="158,52,0,0" VerticalAlignment="Top" Click="btnStop_Click" Height="20" Width="68"/>
                     <Button Content="PAUSE" x:Name="btnPasue" HorizontalAlignment="Left" Margin="85,52,0,0" VerticalAlignment="Top" Click="btnPasue_Click" Height="20" Width="68"/>
-                    <Slider Style="{StaticResource AppSliderStyle}" x:Name="sldProgress" Grid.Column="1" Minimum="0" Maximum="1" Margin="10,10,10,0" Grid.Row="2" VerticalAlignment="Top" Height="18" RenderTransformOrigin="0.427,0.071" MouseLeftButtonUp="timeSlider_MouseLeftButtonUp"  IsSnapToTickEnabled="True" TickFrequency="0.001"/>
+                    <Slider Style="{StaticResource AppSliderStyle}" x:Name="sldProgress" Grid.Column="1" Minimum="0" Maximum="1" Margin="10,10,10,0" Grid.Row="2" VerticalAlignment="Top" Height="18" RenderTransformOrigin="0.427,0.071" MouseLeftButtonUp="timeSlider_MouseLeftButtonUp"  IsSnapToTickEnabled="True" TickFrequency="0.001"  />
                     <Slider Style="{StaticResource AppSliderStyle}" x:Name="sldVolume" HorizontalAlignment="Left" Margin="318,54,0,0" VerticalAlignment="Top" Width="80" Minimum="0" Maximum="1" Value="0.8" ValueChanged="sldVolume_ValueChanged" IsSnapToTickEnabled="True" TickFrequency="0.001"/>
                     <Label Content="Volume" HorizontalAlignment="Left" Margin="313,32,0,0" VerticalAlignment="Top"/>
                 </Grid>
